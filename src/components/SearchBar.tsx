@@ -11,7 +11,6 @@ const SearchBar=(props:any)=>{
                     <input type="text" placeholder="Enter your author name" value={props.searchData} onChange={(e:any)=>props.setSearchData(e.target.value)} className="h-9 w-70 pl-2 decoration-none outline-none" />
                 </div>
 
-                <button className="h-10 sm:h-auto px-6 rounded bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium transition-colors">Search</button>
             </div>
         </div>
         </>
