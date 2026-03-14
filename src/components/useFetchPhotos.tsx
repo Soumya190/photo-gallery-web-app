@@ -1,7 +1,7 @@
 
-import React,{useState,useEffect} from "react";
+import {useState,useEffect} from "react";
 
-const fetchPhotos=()=>{
+const useFetchPhotos=()=>{
     const[loading,setLoading]= useState(false);
     const [error,setError] = useState<any>(null);
     const [photos,setPhotos] = useState<any[]>([]);
@@ -32,4 +32,4 @@ const fetchPhotos=()=>{
     return {photos,loading,error}
 }
 
-export default fetchPhotos;
+export default useFetchPhotos;
